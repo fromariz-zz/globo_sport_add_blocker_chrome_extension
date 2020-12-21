@@ -1,14 +1,15 @@
 {
   "manifest_version": 2,
-  "name": "Globo Sports Area Blopcker",
+  "name": "Globo Sports Area Blocker",
   "description": "Blocks Sports Area from Globo.com",
-  "version": "0.1",
+  "version": "1.0",
   "content_scripts": [
     {
       "matches": ["https://www.globo.com/"],
       "js": ["jquery-3.5.1.min.js", "content.js"]
     }
   ],
+  "icons": { "128": "icon.png" },
   "browser_action": {
     "default_popup": "popup.html"
   },
